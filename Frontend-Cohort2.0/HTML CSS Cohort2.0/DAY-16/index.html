@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Protein Store</title>
+  <style>
+    /* ---------- Reset ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.492);
+      color: rgb(255, 255, 255);
+    }
+
+    /* ---------- Hero Section ---------- */
+    header {
+      text-align: center;
+      padding: 50px 20px 30px;
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.15),
+        rgba(0, 0, 0, 0.1)
+      );
+    }
+
+    header h1 {
+      font-size: 48px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+      color: #f3f3f3;
+    }
+
+    /* ---------- Main Section ---------- */
+    .main {
+      padding: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    /* ---------- Cards ---------- */
+    .card {
+      height: 350px;
+      width: 280px;
+      background-color: white;
+      position: relative;
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .card:hover {
+      
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .card img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      cursor: pointer;
+      transition: transform 0.4s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.1);
+    }
+
+ 
+    .bottom{
+  height: 40%;
+  width: 100%;
+  position: absolute;
+  bottom: -40%;
+
+  transition: all ease 0.4s;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: linear-gradient(transparent,rgba(0, 0, 0, 0.795));
+
+}
+    .card:hover .bottom{
+  bottom: 0;
+}
+    .bottom h3 {
+      font-size: 32px;
+      font-weight: 600;
+      color: white;
+     
+      letter-spacing: 1px;
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+      text-align: center;
+      padding: 20px 10px;
+      background: rgba(0, 0, 0, 0.2);
+      font-size: 14px;
+      color: #ddd;
+      letter-spacing: 0.5px;
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 36px;
+      }
+
+      .card {
+        width: 90%;
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ---------- Hero Section ---------- -->
+  <header>
+    <h1>PROTEIN POWER</h1>
+    <p>Fuel Your Fitness • Strength • Endurance • Recovery</p>
+  </header>
+
+  <!-- ---------- Cards Section ---------- -->
+  <div class="main">
+    <div class="card">
+      <img
+        src="https://p.turbosquid.com/ts-thumb/jm/D3vyWQ/Wv/wheyproteina/png/1686495357/1920x1080/fit_q87/01b1e1c400fbd312b726d014f5acdd82fc56d36c/wheyproteina.jpg"
+        alt="Whey Protein"
+      />
+      <div class="bottom">
+        <h3>Protein 1</h3>
+      </div>
+    </div>
+
+    <div class="card">
+      <img
+        src="https://p.turbosquid.com/ts-thumb/jm/D3vyWQ/Wv/wheyproteina/png/1686495357/1920x1080/fit_q87/01b1e1c400fbd312b726d014f5acdd82fc56d36c/wheyproteina.jpg"
+        alt="Protein 2"
+      />
+      <div class="bottom">
+        <h3>Protein 2</h3>
+      </div>
+    </div>
+
+    <div class="card">
+      <img
+        src="https://p.turbosquid.com/ts-thumb/jm/D3vyWQ/Wv/wheyproteina/png/1686495357/1920x1080/fit_q87/01b1e1c400fbd312b726d014f5acdd82fc56d36c/wheyproteina.jpg"
+        alt="Protein 3"
+      />
+      <div class="bottom">
+        <h3>Protein 3</h3>
+      </div>
+    </div>
+
+    <div class="card">
+      <img
+        src="https://p.turbosquid.com/ts-thumb/jm/D3vyWQ/Wv/wheyproteina/png/1686495357/1920x1080/fit_q87/01b1e1c400fbd312b726d014f5acdd82fc56d36c/wheyproteina.jpg"
+        alt="Protein 4"
+      />
+      <div class="bottom">
+        <h3>Protein 4</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---------- Footer ---------- -->
+  <footer>
+    © 2025 Protein Power • Built with HTML and CSS by Rohit Pokhariya
+  </footer>
+</body>
+</html>

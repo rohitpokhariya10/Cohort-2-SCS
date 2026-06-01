@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+   
+    height: 100%;
+    width: 100%;
+}
+#main{
+     background-color: lightblue;
+    height: 100%;
+    width: 100%;
+     display: flex;
+      align-items: center;
+    justify-content: center;
+   
+    
+}
+#inside {
+  height: 380px;
+  width: 280px;
+  background: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 20px black;
+  
+}
+#inside > img {
+  height: 100px;
+  width: 100px;  
+ object-position: center;
+  object-fit: cover;    /* Crop image nicely */
+  border-radius: 50%;   
+  border: 3px solid white; 
+  background-color: black;
+}
+#inside h3{
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    padding-top: 8px;
+}
+#inside p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 5px 0;
+  color: rgb(46, 43, 43);
+  text-align: center;
+}
+#inside button {
+  padding: 6px 18px;
+  border-radius: 20px;
+  border: none;
+  background-color: #0095f6;  /* Instagram blue */
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  
+}
+
+/* Hover effect */
+#inside button:hover {
+  background-color: #0078cc;
+  transform: scale(1.05); 
+}
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="inside">
+            <img src="https://ik.imagekit.io/sheryians/light-logo_lNzGXRRlQ.png" alt="">
+             <h3>Sheriyans Coding School</h3>
+             <p>Harsh Vandana Sharma</p>
+             <button>Follow</button>
+        </div>
+        <div id="card"></div>
+    </div>
+    </div>
+    
+    
+</body>
+</html>

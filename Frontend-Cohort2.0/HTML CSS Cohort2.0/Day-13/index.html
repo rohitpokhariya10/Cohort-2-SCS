@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+
+        }
+
+        #main {
+            background-color: whitesmoke;
+            height: 100%;
+            width: 100%;
+            
+            position: relative;
+
+        }
+
+        #nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 20px;
+
+        }
+
+        #nav a {
+            text-decoration: none;
+            margin: 10px;
+            color: #000;
+            font-size: 20px;
+
+
+        }
+
+        #center {
+            font-size: larger;
+            font-weight: 650;
+
+        }
+
+        #nav1,
+        #nav2 {
+            display: flex;
+            gap: 10px;
+        }
+
+
+        #main>h1 {
+            font-size: 330px;
+            font-weight: 140;
+            margin-left: 40px;
+        }
+
+        #btm-left {
+
+            width: 350px;
+            padding: 55px;
+
+            position: absolute;
+            bottom: 10%;
+
+        }
+
+        #btm-left h3 {
+
+            font-size: 25px;
+        }
+
+        #btm-left p {
+            font-size: 15px;
+        }
+
+        #btm-left h4 {
+            margin-top: 25px;
+        }
+
+        
+        
+        #img1 {
+            height: 280px;
+            width: 200px;
+            position: absolute;
+            left: 58%;
+            top: 49%;
+            z-index:30;
+           
+        }
+
+        #img2 {
+               height: 200px;
+            width: 150px;
+            position: absolute;
+            bottom: 2%;
+            left: 50%;
+            z-index:31;
+        }
+
+        #img3 {
+               
+            width: 150px;
+            position: absolute;
+            height: 200px;
+            bottom:3%;
+            left:70%;
+            z-index: 25;
+        }
+
+
+
+        #footer {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            bottom: 2%;
+            padding-left: 55px;
+            padding-bottom: 10px;
+
+
+
+
+        }
+
+        #footer h3 {
+            font-size: 20px;
+        }
+
+        #footer a {
+            text-decoration: none;
+            padding-right: 25px;
+            color: #000;
+            font-size: 18px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="nav">
+            <div id="nav1">
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">Lookbook</a>
+            </div>
+
+
+
+            <div id="center">BEIGES</div>
+
+            <div id="nav2">
+                <a href="#">About</a>
+                <a href="#">News</a>
+                <a href="#">Cart</a>
+            </div>
+        </div>
+
+
+        <h1>Sweaters</h1>
+
+
+        <!-- bottom-left -->
+        <div id="btm-left">
+            <h3>Product Details</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Cum, ipsa.</p>
+            <h4>Material</h4>
+            <p>100% cotton</p>
+        </div>
+
+
+        <img id="img1"
+            src="https://images.unsplash.com/photo-1552738352-a077028e482c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="">
+        <img id="img2"
+            src="https://images.unsplash.com/photo-1671643417206-f407759ec712?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="">
+        <img id="img3"
+            src="https://images.unsplash.com/photo-1630203340413-22c831d699e7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="">
+
+
+        <div id="footer">
+            <h3>New Collection</h3>
+            <a href="#">Shop the look</a>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

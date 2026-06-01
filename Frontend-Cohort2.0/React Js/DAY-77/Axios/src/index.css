@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  padding: 20px;
+  background-color: black;
+   overflow-y: scroll;
+  
+}
+body::-webkit-scrollbar {
+  display: none;              /* Chrome, Edge, Safari */
+}
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+button {
+  height: 80px;
+  
+  padding: 15px 20px;
+  font-size: 2rem;
+  border: 2px solid;
+  background-color: rgb(34, 114, 120);
+  border-radius: 5px;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+button:active {
+  scale: 0.97;
+}
+
+.user-card {
+  height: 300px;
+  width: 300px;
+  border-radius: 16px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+}
+
+.user-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.user-website {
+  font-size: 1rem;
+  color: #00f5ff;
+  text-decoration: none;
+}
+
+.user-website:hover {
+  text-decoration: underline;
+}
+
+.user-email {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sticky child inside parent</title>
+<style>
+  *{ box-sizing: border-box; margin:0; padding:0; }
+  body{ min-height:100vh; }
+
+  /* parent is the scroll container area */
+  #parent{
+    background-color: aqua;
+    height: 1500px; /* big height to scroll */
+    padding-top: 20px; /* some space above child */
+  }
+
+  /* child will stick to viewport top while parent is visible,
+     then stop when parent ends */
+  #child{
+    position: sticky;
+    top: 0; /* stick to viewport top */
+    /* center horizontally: using transform */
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 120px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background: red;
+    color: white;
+    font-weight: bold;
+
+    /* optional nicer visual */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    z-index: 10;
+  }
+</style>
+</head>
+<body>
+
+  <div id="parent">
+    <div id="child">Sticky</div>
+
+    <!-- filler so you can scroll inside page -->
+    <div style="height:1300px; background: #000;"></div>
+  </div>
+
+  <!-- footer so parent ends and you can see unsticking -->
+  <div style="height:800px; background:#fff;"></div>
+
+</body>
+</html>

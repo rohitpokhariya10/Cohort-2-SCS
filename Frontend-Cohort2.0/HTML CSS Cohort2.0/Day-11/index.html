@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+    @font-face {
+        font-family: f1;
+        src: url(./Race\ Sport.ttf);
+    }
+    #box1 {
+      position: relative;    /* so ::before can be positioned */
+      height: 100%;
+      width: 100%;
+      overflow: hidden;      /* to hide blur edges */
+    }
+    #box1::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-image: url(https://images.unsplash.com/photo-1689589079779-d442bba9ef97?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+      background-size: cover;
+      background-position: center;
+      filter: blur(1.25px);   /* blur applied only on bg */
+      transform: scale(1.1); /* thoda zoom so edges white na dikhe */
+      z-index: -1;         /* send bg behind content */
+    }
+    #inner {
+      position: relative;  /* keep form above */
+      z-index: 1;
+      text-align: center;
+      padding-top: 50px;
+    }
+    #form{
+        margin: 35px;
+
+    }
+   #form input {
+  display: block;        /* each input on new line */
+  margin: 10px auto;     /* vertical gap between inputs */
+  padding: 10px;         /* thoda andar space */
+  width: 250px;          /* optional: fix width */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+
+    #btn{
+        background: green;
+        border: 2px solid transparent;
+        padding:10px 25px;
+        border-radius: 5px;
+        
+    }
+   h1 {
+  font-family: f1;
+  font-size: 60px;             /* big & bold */
+  font-weight: 700;
+  color: #00ff66;              /* neon green */
+  text-transform: uppercase;   /* all caps for power */
+  letter-spacing: 4px;         /* spaced out */
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+  </style>
+</head>
+<body>
+  <div id="box1">
+    <div id="inner">
+        <h1>Power Up Your Ride</h1>
+      <form id="form">
+        <input type="email" placeholder="Enter your email">
+        <br>
+        <input type="password" placeholder="Enter your password">
+      </form>
+      <button id="btn"> Login </button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+}
+.App{
+  height: 100%;
+  width: 100%;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.xyz{
+   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}

@@ -1,0 +1,46 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,
+body ,#rootv{
+height: 100%;
+width: 100%;
+
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.card {
+  width: 250px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.card-name {
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+.card-email {
+  color: gray;
+  font-size: 14px;
+}
