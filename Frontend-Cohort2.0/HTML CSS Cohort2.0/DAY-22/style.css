@@ -1,0 +1,74 @@
+/* style.css */
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { height:100%; }
+
+main{
+  min-height:100vh;               /* OK to use min-height — not fixed heights */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#111;
+  padding:2rem;
+}
+
+/* Hero container sized by width only (no height used) */
+.hero{
+  width:70%;
+  
+  background:rgb(223, 207, 186);
+  border-radius:18px;
+  padding:18px;
+  display:grid;
+  gap:16px;
+
+  /* 4 columns: left tall column + 3 fractional columns for right */
+  grid-template-columns: 260px 1fr 1fr 1fr;
+
+  /* Two rows; heights will be determined by content (images' aspect ratios) */
+  grid-template-rows: auto auto;
+
+  grid-template-areas:
+    "img1 img2 img2 img2"
+    "img1 img3 img4 img5";
+
+  /* keep rounded corners and clip overflow inside child boxes */
+  overflow:visible;
+}
+
+/* Make the grid item fill its grid area */
+.hero > div { 
+  border-radius:14px;
+  
+  background: #222;
+  
+  
+  
+}
+
+/* area assignments */
+.img1 { grid-area: img1; }
+.img2 { grid-area: img2; }
+.img3 { grid-area: img3; }
+.img4 { grid-area: img4; }
+.img5 { grid-area: img5; }
+
+/* Images: cover, block-level so there is no inline gap */
+.hero img{
+  display:block;
+  width:100%;
+  object-fit:cover;
+  object-position:center;
+  
+  border-radius:inherit;
+}
+
+/* Use aspect-ratio to control each image's shape without explicit heights */
+.img1 img { aspect-ratio: 2/3; }   /* tall left image */
+.img2 img { aspect-ratio: 3/1; }   /* wide banner across top right */
+
+.img3 img,
+.img4 img,
+.img5 img { aspect-ratio: 1/1; }   /* small square thumbs */
+
+/* Small visual tweaks for dark border and inner padding look */
+.hero { box-shadow: 0 8px 0 rgba(255,255,255,0.02) inset; }

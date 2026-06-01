@@ -1,0 +1,15 @@
+@import "tailwindcss";
+* {
+
+box-sizing: border-box;
+}
+html,
+body {
+height: 100%;
+width: 100%;
+}
+.card{
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
